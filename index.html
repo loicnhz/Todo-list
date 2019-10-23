@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TODO List</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>TODO List</h1>
+        <p>
+            Pour ajouter une nouvelle tâche, saisissez du texte dans le champs ci-dessous puis selectionnez une priorité (haute, moyenne ou basse).<br />
+            Vous pouvez supprimer la tâche à tout moment ou bien la marquer comme "effectuée".
+        </p>
+        <!-- Formulaire pour ajouter des taches -->
+        <form id="tasks-form">
+            <div class="form-row">
+                <div class="form-group col-md-10">
+                    <label for="task-text">Tâche</label>
+                    <input type="text" class="form-control" id="task-text">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="task-priority">Priorité</label>
+                    <select id="task-priority" class="form-control">
+                        <option selected>Haute</option>
+                        <option>Moyenne</option>
+                        <option>Basse</option>
+                    </select>
+                </div>
+            </div>
+            <input type="submit" value="Ajouter la tâche" class="btn btn-primary">
+        </form>
+        <!-- Tableau des tâches -->
+        <table class="table mt-4" id="tasks-table">
+            <thead>
+                <tr>
+                    <th style="width:40px;">Tâche</th>
+                    <th></th>
+                    <th style="width:90px;">Priorité</th>
+                    <th style="width:40px;"></th>
+                </tr>
+            </thead>
+            <tbody id="tasks-list">
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

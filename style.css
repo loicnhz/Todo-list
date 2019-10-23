@@ -1,0 +1,66 @@
+#tasks-table {
+    table-layout: fixed;
+}
+
+#tasks-table td {
+    word-wrap: break-word; /* Retour à la ligne quand ça dépasse */
+}
+
+.badge-fullwidth {
+    width: 100%;
+}
+
+.low-priority {
+    background-color: #28a745;
+    color: white;
+}
+
+.average-priority {
+    background-color: #ff9800;
+    color: white;
+}
+
+.high-priority {
+    background-color: #dc3545;
+    color: white;
+}
+
+.action-delete {
+    color: hsla(354, 70%, 54%, 1);
+}
+
+.action-delete:hover {
+    color: hsla(354, 70%, 39%, 1);
+}
+
+.action-validate {
+    color: hsla(0, 0%, 50%, 1);
+}
+
+.action-validate:hover {
+    color: hsla(134, 61%, 41%, 1);
+}
+
+.action-validate-done {
+    color: hsla(134, 61%, 26%, 1);
+}
+
+.action-validate-done:hover {
+    color: hsla(354, 70%, 54%, 1);
+}
+
+.task-validated-row {
+    background-color: #98e6ab;
+}
+
+.task-validated {
+    text-decoration: line-through;
+    color: #595959;
+}
+
+@media (max-width: 767.98px) { 
+    #tasks-form input[type="submit"]
+    {
+        width: 100%;
+    }
+}
