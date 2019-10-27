@@ -1,6 +1,6 @@
 # TODO List
 
-<img src="https://github.com/loicnhz/todo-list/blob/master/img/img_01.PNG" width="602"/>
+<img src="https://github.com/loicnhz/todo-list/blob/master/img/img_1.PNG" width="702"/>
 
 Il s'agit d'une liste des tâches à faire, on peut ajouter des tâches avec une priorité (basse, moyenne ou haute), les marquer comme effectuées ou bien les supprimer. Les technologies utilisées sont Bootstrap et Javascript.
 
