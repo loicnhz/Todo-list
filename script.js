@@ -18,7 +18,7 @@ class Task {
         if(this.compteur === undefined)
         {
             // On vérifie si l'item tasks existe dans le local storage
-            if(localStorage.getItem('tasks') === null)
+            if(localStorage.getItem('tasks') === null || JSON.parse(localStorage.getItem('tasks')).length === 0)
             {
                 this.compteur = 0;
             }
@@ -117,6 +117,7 @@ function getTasksStorage() {
     {
         tasks = JSON.parse(localStorage.getItem('tasks'));
     }
+		
     return tasks;
 }
 
